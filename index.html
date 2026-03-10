@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imob em Conexão | Encontre seu Lar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Estilo CTO Premium - Limpo e Focado em Conversão */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        
+        body { background-color: #f4f4f4; color: #333; line-height: 1.6; }
+
+        header { background: #002e5b; color: white; padding: 1rem 5%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        
+        .logo { font-size: 1.5rem; font-weight: bold; }
+        
+        .hero { background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=1350&q=80'); 
+                height: 60vh; background-size: cover; background-position: center; display: flex; flex-direction: column; justify-content: center; align-items: center; color: white; text-align: center; padding: 0 20px; }
+
+        .hero h1 { font-size: 3rem; margin-bottom: 10px; }
+        .hero p { font-size: 1.2rem; margin-bottom: 20px; }
+
+        .btn-contato { background: #25d366; color: white; padding: 15px 30px; text-decoration: none; border-radius: 50px; font-weight: bold; font-size: 1.1rem; transition: 0.3s; }
+        .btn-contato:hover { background: #128c7e; transform: scale(1.05); }
+
+        .container { max-width: 1200px; margin: 40px auto; padding: 0 20px; }
+        
+        .grid-imoveis { display: grid; grid-template-columns: repeat(auto-fit, min-minmax(300px, 1fr)); gap: 30px; margin-top: 30px; }
+        
+        .card { background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.1); transition: 0.3s; }
+        .card:hover { transform: translateY(-10px); }
+        .card img { width: 100%; height: 200px; object-fit: cover; }
+        .card-content { padding: 20px; }
+        .card-content h3 { margin-bottom: 10px; color: #002e5b; }
+        
+        /* Botão Flutuante WhatsApp */
+        .whatsapp-fixo { position: fixed; width: 60px; height: 60px; bottom: 40px; right: 40px; background-color: #25d366; color: #FFF; border-radius: 50px; text-align: center; font-size: 30px; box-shadow: 1px 1px 2px #888; z-index: 1000; display: flex; align-items: center; justify-content: center; text-decoration: none; }
+        
+        @media (max-width: 768px) { .hero h1 { font-size: 2rem; } .whatsapp-fixo { width: 50px; height: 50px; bottom: 20px; right: 20px; } }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Imob em Conexão</div>
+        <div><i class="fas fa-phone"></i> (16) 99999-9999</div>
+    </header>
+
+    <section class="hero">
+        <h1>O imóvel dos seus sonhos está aqui.</h1>
+        <p>Atendimento personalizado e as melhores oportunidades de Araraquara e região.</p>
+        <a href="https://wa.me/5516999999999" target="_blank" class="btn-contato">Falar com a Tati agora</a>
+    </section>
+
+    <div class="container">
+        <h2 style="text-align: center;">Imóveis em Destaque</h2>
+        <div class="grid-imoveis">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=500&q=60" alt="Casa Luxo">
+                <div class="card-content">
+                    <h3>Casa Condomínio Fechado</h3>
+                    <p>3 Quartos | 2 Suítes | 4 Vagas</p>
+                    <p><strong>R$ 850.000,00</strong></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=500&q=60" alt="Apartamento">
+                <div class="card-content">
+                    <h3>Apartamento Garden</h3>
+                    <p>2 Quartos | 1 Suíte | Lazer Completo</p>
+                    <p><strong>R$ 420.000,00</strong></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a href="https://wa.me/5516999999999" class="whatsapp-fixo" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+</body>
+</html>
