@@ -4,56 +4,76 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Legacy | Financiamento Caixa Araraquara</title>
+<title>Legacy | Consultoria Imobiliária & Financiamento</title>
+<link href="" rel="stylesheet">
+<link rel="stylesheet" href="">
 <style>
-:root { --bronze: #2c1a12; --gold: #c5a059; --off-white: #f9f6f2; }
-* { margin: 0; padding: 0; box-sizing: border-box; font-family: sans-serif; }
-body { background-color: var(--off-white); color: #333; line-height: 1.6; }
-header { background: #fff; padding: 15px 5%; display: flex; justify-content: space-between; align-items: center; border-bottom: 4px solid var(--gold); position: sticky; top: 0; z-index: 1000; }
-.hero { background: linear-gradient(rgba(44,26,18,0.8), rgba(44,26,18,0.8)), url(''); height: 60vh; display: flex; align-items: center; justify-content: center; text-align: center; color: #fff; flex-direction: column; padding: 20px; }
-.hero h1 { font-size: 2.5rem; color: var(--gold); text-transform: uppercase; margin-bottom: 15px; }
-.btn-whats { background: #25d366; color: #fff; padding: 15px 35px; text-decoration: none; border-radius: 50px; font-weight: bold; font-size: 1.1rem; margin-top: 20px; display: inline-block; }
-.section { padding: 40px 10%; text-align: center; }
-.perfil { display: flex; gap: 30px; align-items: center; background: #fff; padding: 30px; border-radius: 20px; margin-top: 20px; text-align: left; border: 1px solid var(--gold); }
-.footer { background: var(--bronze); color: #fff; padding: 40px; text-align: center; border-top: 5px solid var(--gold); }
-.whatsapp-float { position: fixed; width: 60px; height: 60px; bottom: 20px; right: 20px; background: #25d366; color: #fff; border-radius: 50px; display: flex; align-items: center; justify-content: center; font-size: 30px; text-decoration: none; z-index: 2000; }
+:root {
+--rose-gold: linear-gradient(135deg, #e5b299 0%, #b38b78 100%);
+--dark-bronze: #2c1a12;
+--soft-rose: #fdfaf9;
+--white: #ffffff;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Montserrat', sans-serif; background-color: var(--soft-rose); color: var(--dark-bronze); line-height: 1.6; }
+h1, h2, h3 { font-family: 'Playfair Display', serif; }
+header { background: var(--white); padding: 15px 5%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 15px rgba(0,0,0,0.05); border-bottom: 3px solid #e5b299; }
+.logo-img { height: 80px; }
+.hero { background: linear-gradient(rgba(44, 26, 18, 0.6), rgba(44, 26, 18, 0.6)), url(''); height: 80vh; background-size: cover; background-position: center; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; color: var(--white); padding: 0 20px; }
+.hero h1 { font-size: 3.5rem; margin-bottom: 20px; color: #f4d0bc; text-shadow: 2px 2px 4px rgba(0,0,0,0.3); }
+.btn-premium { background: var(--rose-gold); color: var(--white) !important; padding: 20px 45px; border-radius: 50px; text-decoration: none; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; box-shadow: 0 10px 20px rgba(179, 139, 120, 0.4); display: inline-block; }
+.mcmv-box { background: var(--white); padding: 80px 10%; margin-top: -50px; border-radius: 30px 30px 0 0; text-align: center; }
+.mcmv-logo { width: 280px; margin-bottom: 30px; }
+.grid-imoveis { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 40px; padding: 60px 10%; }
+.card { background: var(--white); border-radius: 20px; overflow: hidden; box-shadow: 0 15px 35px rgba(0,0,0,0.05); border: 1px solid #eee; }
+.card img { width: 100%; height: 280px; object-fit: cover; }
+.card-body { padding: 30px; }
+footer { background: var(--dark-bronze); color: var(--white); padding: 60px 10%; text-align: center; border-top: 5px solid #b38b78; }
+.whatsapp-float { position: fixed; bottom: 30px; right: 30px; background: #25d366; color: white; width: 70px; height: 70px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 35px; text-decoration: none; z-index: 9999; }
 </style>
 </head>
 <body>
 <header>
-<img src="logo-legacy.png" alt="Legacy" style="height: 60px;">
-<div style="text-align: right; font-size: 0.8rem;"><strong>imobemconexao@gmail.com</strong></div>
+<img src="logo-legacy.png" class="logo-img" alt="Legacy">
+<div style="text-align: right;">
+<p style="font-weight: 700; font-size: 1.1rem;">Tatiane | CCA Oficial Caixa</p>
+<p style="font-size: 0.9rem; color: #b38b78;">imobemconexao@gmail.com</p>
+</div>
 </header>
 <section class="hero">
-<h1>Saia do Aluguel com a Legacy</h1>
-<p>Especialista em Financiamento Minha Casa Minha Vida e Aprovação Bancária.</p>
-<a href="" class="btn-whats">Simular Financiamento</a>
+<h1>Conquiste seu Legado</h1>
+<p style="font-size: 1.5rem; max-width: 850px; margin-bottom: 40px; font-weight: 300;">A autoridade de quem entende de banco, agora dedicada a aprovar o seu financiamento.</p>
+<a href="" class="btn-premium">Simular Financiamento</a>
 </section>
-<section class="section">
-<div style="background: #fff; padding: 30px; border-radius: 15px;">
-<h2 style="color: var(--bronze)">Minha Casa Minha Vida</h2>
-<p>Como CCA Oficial da Caixa em Araraquara, a Legacy garante agilidade na sua aprovação.</p>
+<section class="mcmv-box">
+<img src="" class="mcmv-logo" alt="MCMV">
+<h2 style="font-size: 2.8rem; margin-bottom: 20px;">Saia do Aluguel com Segurança</h2>
+<p style="font-size: 1.2rem; color: #666; max-width: 900px; margin: 0 auto;">Como Correspondente Caixa Aqui, a Legacy cuida de todo o processo para você conquistar sua casa própria.</p>
+</section>
+<section style="background: var(--white);">
+<h2 style="text-align: center; font-size: 2.5rem; padding-top: 60px;">Oportunidades em Araraquara</h2>
+<div class="grid-imoveis">
+<div class="card">
+<img src="" alt="Imóvel 1">
+<div class="card-body">
+<h3>Residencial Legacy Centro</h3>
+<p>Apartamentos com sacada e lazer completo. Enquadrado no Minha Casa Minha Vida.</p>
+</div>
+</div>
+<div class="card">
+<img src="" alt="Imóvel 2">
+<div class="card-body">
+<h3>Casas em Bairro Planejado</h3>
+<p>Oportunidade única para sair do aluguel com parcelas menores que a locação.</p>
+</div>
+</div>
 </div>
 </section>
-<section class="section" style="background: #fff;">
-<h2 style="color: var(--bronze)">AUTORIDADE E HABILIDADE</h2>
-<div class="perfil">
-<div style="width: 150px; height: 150px; background: #eee; border-radius: 50%;"></div>
-<div>
-<h3>Tatiane</h3>
-<p style="color: var(--gold); font-weight: bold;">Diretora, Advogada & CCA Oficial</p>
-<p>Ex-gerente premiada como a melhor do Brasil. Mais de 20 anos de experiência bancária.</p>
-</div>
-</div>
-</section>
-<section class="section">
-<h2>ONDE ESTAMOS</h2>
-<p><strong>Avenida Portugal, 597 - Sala 7, Centro - Araraquara/SP</strong></p>
-</section>
-<footer class="footer">
-<p>Legacy Consultoria Imobiliária</p>
-<p>CCA Oficial Caixa Econômica Federal</p>
+<footer>
+<p style="font-size: 1.5rem; font-family: 'Playfair Display'; margin-bottom: 10px;">Legacy Consultoria Imobiliária</p>
+<p>Avenida Portugal, 597 - Sala 7, Centro | Araraquara - SP</p>
+<p style="margin-top: 20px; color: #e5b299; font-weight: 700;">CCA OFICIAL CAIXA ECONÔMICA FEDERAL</p>
 </footer>
-<a href="" class="whatsapp-float">W</a>
+<a href="" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
 </body>
 </html>
