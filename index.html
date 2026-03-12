@@ -1,29 +1,104 @@
 <!DOCTYPE html>
+
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Legacy | Financiamento Caixa Rose Gold</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<style>
+:root {
+--rose-gold: linear-gradient(135deg, #fce0d3 0%, #e5b299 25%, #b38b78 50%, #e5b299 75%, #fce0d3 100%);
+--bronze: #e5b299;
+--black: #080808;
+--card: #121212;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { background-color: var(--black); color: #f2f2f2; font-family: 'Montserrat', sans-serif; }
+
+    header { background: #000; padding: 15px 5%; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #b38b78; position: sticky; top: 0; z-index: 1000; }
+    .logo-header { height: 75px; border-radius: 20px; border: 1px solid #b38b78; }
+
+    .hero { 
+        background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('mcmv.jpg');
+        height: 60vh; background-size: cover; background-position: center;
+        display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 20px;
+    }
+    .hero h1 { 
+        font-family: 'Playfair Display', serif; font-size: 3.5rem; 
+        background: var(--rose-gold); -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+        margin-bottom: 10px;
+    }
+
+    .section { padding: 60px 10%; text-align: center; }
+    .mcmv-logo { width: 200px; border-radius: 25px; border: 2px solid var(--bronze); margin-bottom: 20px; background: white; padding: 10px; }
     
-    <title>Legacy | Financiamento Caixa Rose Gold e Imóveis Araraquara</title>
-    <meta name="description" content="Saia do aluguel com a Legacy. Especialista em Financiamento Minha Casa Minha Vida Rose Gold em Araraquara com a expertise técnica de quem entende de banco.">
-    <meta name="keywords" content="imobiliária araraquara, comprar casa araraquara, alugar casa araraquara, financiamento caixa, minha casa minha vida, sair do aluguel, legacy consultoria, correspondente caixa aqui">
+    /* SEÇÃO TATIANE */
+    .perfil-container { background: var(--card); padding: 60px 10%; display: flex; gap: 40px; align-items: center; border-radius: 40px; margin: 20px 5%; border: 1px solid #222; }
+    .perfil-img { width: 320px; height: 320px; border-radius: 30px; border: 3px solid var(--bronze); object-fit: cover; box-shadow: 0 0 20px rgba(229, 178, 153, 0.2); }
+    .perfil-text { text-align: left; }
+    .perfil-text h2 { font-size: 2.5rem; color: var(--bronze); font-family: 'Playfair Display', serif; }
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --bg-deep-black: #080808; /* Preto profundo para luxo */
-            --bg-card-black: #121212; /* Preto para cards e seções */
-            --rose-gold-gradient: linear-gradient(135deg, #e5b299 0%, #b38b78 100%); /* Degradê metalizado */
-            --rose-gold-text: #e5b299; /* Cor fixa para texto menor */
-            --text-on-black: #f9f9f9; /* Branco suave para leitura */
-            --white: #ffffff;
-            --success: #25d366;
-            --font-main: 'Montserrat', sans-serif;
-        }
+    /* EMPREENDIMENTOS */
+    .grid-obras { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; padding: 40px 0; }
+    .card-obra { background: #1a1a1a; border-radius: 25px; overflow: hidden; border: 1px solid #333; }
+    .card-obra img { width: 100%; height: 220px; object-fit: cover; }
+    .card-obra h3 { padding: 20px; color: var(--bronze); }
 
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: var(--font-main); }
-        body { background-color: var(--bg-deep-black); color: var(--text-on-black); line-height: 1.6; }
+    .caixa-logo { width: 180px; border-radius: 15px; margin-top: 30px; }
+    footer { padding: 40px; text-align: center; border-top: 1px solid #222; font-size: 0.9rem; }
+    .whatsapp { position: fixed; bottom: 30px; right: 30px; background: #25d366; color: white; width: 65px; height: 65px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 35px; text-decoration: none; z-index: 2000; }
+</style>
+</head>
+<body>
 
-        header { background: #000; padding: 15px 5%; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 1000; box-shadow: 0 4px 15px rgba(229, 178, 153, 0.1); border-bottom: 2px solid #b38b78; }
-        .logo-header { height: 70px; border-radius: 1
+<header>
+<img src="logo-legacy.png" class="logo-header" alt="Legacy">
+<div style="text-align: right; color: var(--bronze); font-weight: bold;">CCA Oficial Caixa</div>
+</header>
+
+<section class="hero">
+<h1>Conquiste seu Legado</h1>
+<p style="color: #fce0d3; font-size: 1.2rem;">Expertise Bancária em Araraquara</p>
+</section>
+
+<section class="section">
+<img src="mcmv.jpg" class="mcmv-logo" alt="Minha Casa Minha Vida">
+<h2 style="color: var(--bronze); font-family: 'Playfair Display'; font-size: 2.2rem;">Minha Casa Minha Vida</h2>
+<p style="max-width: 800px; margin: 20px auto; opacity: 0.8;">Aprovação ágil e taxas reduzidas. Como CCA Oficial, a Tatiane cuida de toda a burocracia para você.</p>
+</section>
+
+<div class="perfil-container">
+<img src="tati.jpg" class="perfil-img" alt="Tatiane">
+<div class="perfil-text">
+<h2>Tatiane</h2>
+<p style="color: #fce0d3; font-weight: bold; margin-bottom: 15px;">Diretora, Advogada & CCA Oficial</p>
+<p>Ex-gerente premiada como a melhor do Brasil por 5 anos. Autoridade técnica para garantir a melhor aprovação do seu crédito.</p>
+<img src="caixa.jpg" class="caixa-logo" alt="Caixa Aqui">
+</div>
+</div>
+
+<section class="section">
+<h2 style="color: var(--bronze); font-family: 'Playfair Display'; font-size: 2.2rem;">Empreendimentos Araraquara</h2>
+<div class="grid-obras">
+<div class="card-obra">
+<img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?q=80&w=500" alt="Obra 1">
+<h3>Residencial Legacy I</h3>
+</div>
+<div class="card-obra">
+<img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?q=80&w=500" alt="Obra 2">
+<h3>Vilage Araraquara</h3>
+</div>
+</div>
+</section>
+
+<footer>
+<p>Av. Portugal, 597 - Sala 7, Centro | Araraquara - SP</p>
+<p style="margin-top: 10px; color: var(--bronze);">© 2026 Legacy Consultoria</p>
+</footer>
+
+<a href="https://wa.me/5516997846928" class="whatsapp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+
+</body>
+</html>
