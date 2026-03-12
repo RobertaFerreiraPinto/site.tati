@@ -3,97 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Legacy | Consultoria Imobiliária</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <title>Legacy | Consultoria de Elite</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         :root {
-            --rose-gold-shine: linear-gradient(135deg, #fce0d3 0%, #e5b299 25%, #b38b78 50%, #e5b299 75%, #fce0d3 100%);
+            --rose-metallic: linear-gradient(135deg, #fce0d3 0%, #e5b299 25%, #b38b78 50%, #e5b299 75%, #fce0d3 100%);
             --bronze: #e5b299;
-            --deep-black: #050505;
-            --card-gray: #111;
+            --black: #050505;
         }
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { background-color: var(--deep-black); color: #fff; font-family: 'Montserrat', sans-serif; }
+        body { background-color: var(--black); color: #fff; font-family: 'Montserrat', sans-serif; }
         
-        header { background: #000; padding: 20px 5%; display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #b38b78; }
-        .logo-header { height: 70px; border-radius: 50%; border: 1px solid #b38b78; }
+        /* CABEÇALHO LIMPO */
+        header { 
+            background: #000; padding: 15px 5%; display: flex; justify-content: space-between; align-items: center; 
+            border-bottom: 2px solid #b38b78; position: sticky; top: 0; z-index: 1000;
+        }
+        .logo-header { height: 75px; border-radius: 15px; border: 1px solid #b38b78; }
+        .cca-tag { color: var(--bronze); font-weight: bold; letter-spacing: 1px; }
 
+        /* HERO COM ROSE GOLD BRILHANTE */
         .hero { 
-            background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url('download.jpg');
-            height: 70vh; background-size: cover; background-position: center;
+            background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)), url('mcmv.jpg');
+            height: 65vh; background-size: cover; background-position: center;
             display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;
         }
-        .hero h1 { font-family: 'Playfair Display', serif; font-size: 4rem; background: var(--rose-gold-shine); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .hero h1 { 
+            font-family: 'Playfair Display', serif; font-size: 4rem; 
+            background: var(--rose-metallic); -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            margin-bottom: 15px; text-shadow: 0 0 15px rgba(229, 178, 153, 0.2);
+        }
+        .hero p { color: #fce0d3; font-size: 1.4rem; font-weight: 300; }
 
         .section { padding: 80px 10%; }
-        .mcmv-logo { width: 180px; border-radius: 20px; border: 2px solid var(--bronze); padding: 10px; background: #fff; margin-bottom: 30px; }
+        .mcmv-logo { width: 220px; border-radius: 25px; border: 2px solid var(--bronze); padding: 10px; background: #fff; margin-bottom: 30px; }
 
-        .perfil-container { background: var(--card-gray); display: flex; align-items: center; gap: 50px; padding: 60px; border-radius: 40px; border: 1px solid #222; margin-top: 40px; }
-        .perfil-img { width: 350px; height: 350px; border-radius: 40px; border: 3px solid var(--bronze); object-fit: cover; }
+        /* SEÇÃO TATIANE - AUTORIDADE */
+        .perfil-container { 
+            background: #111; display: flex; align-items: center; gap: 50px; padding: 60px; 
+            border-radius: 40px; border: 1px solid #222; margin-top: 40px; 
+        }
+        .perfil-img { 
+            width: 350px; height: 350px; border-radius: 40px; border: 3px solid var(--bronze); 
+            object-fit: cover; box-shadow: 0 0 25px rgba(179, 139, 120, 0.2); 
+        }
         .perfil-info h2 { font-family: 'Playfair Display', serif; font-size: 3rem; color: var(--bronze); margin-bottom: 10px; }
-        
-        .grid-obras { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 40px; }
+        .caixa-logo { width: 160px; border-radius: 10px; margin-top: 20px; }
+
+        /* EMPREENDIMENTOS */
+        .grid-obras { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 40px; margin-top: 40px; }
         .card-obra { background: #000; border-radius: 30px; overflow: hidden; border: 1px solid #333; transition: 0.3s; }
         .card-obra:hover { border-color: var(--bronze); transform: translateY(-10px); }
-        .card-obra img { width: 100%; height: 250px; object-fit: cover; }
-        .card-obra h3 { padding: 20px; color: var(--bronze); text-align: center; font-size: 1.2rem; }
+        .card-obra img { width: 100%; height: 260px; object-fit: cover; }
+        .card-obra h3 { padding: 25px; color: var(--bronze); text-align: center; font-size: 1.3rem; }
 
-        footer { padding: 60px; text-align: center; background: #000; border-top: 1px solid #222; }
-        .whatsapp-float { position: fixed; bottom: 30px; right: 30px; background: #25d366; color: white; width: 65px; height: 65px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 35px; text-decoration: none; box-shadow: 0 10px 20px rgba(0,0,0,0.5); z-index: 2000; }
-        
-        @media (max-width: 768px) { .perfil-container { flex-direction: column; text-align: center; } .hero h1 { font-size: 2.5rem; } }
+        footer { padding: 60px; text-align: center; background: #000; border-top: 1px solid #222; color: #666; font-size: 0.9rem; }
+        .whatsapp { 
+            position: fixed; bottom: 30px; right: 30px; background: #25d366; color: white; 
+            width: 65px; height: 65px; border-radius: 50%; display: flex; align-items: center; 
+            justify-content: center; font-size: 35px; text-decoration: none; z-index: 2000; 
+            box-shadow: 0 10px 20px rgba(0,0,0,0.5); 
+        }
     </style>
 </head>
 <body>
 
 <header>
     <img src="logo-legacy.png" class="logo-header" alt="Legacy">
-    <div style="color: var(--bronze); font-weight: bold; font-size: 1.1rem;">CCA Oficial Caixa</div>
+    <div class="cca-tag">CCA Oficial Caixa</div>
 </header>
 
 <section class="hero">
     <h1>Conquiste seu Legado</h1>
-    <p style="font-size: 1.5rem; color: #fce0d3; margin-top: 10px;">A Habilidade de quem entende de Aprovação Bancária.</p>
+    <p>Habilidade Técnica e Autoridade Bancária em Araraquara</p>
 </section>
 
 <section class="section" style="text-align: center;">
-    <img src="download.jpg" class="mcmv-logo" alt="MCMV">
-    <h2 style="font-family: 'Playfair Display'; font-size: 2.5rem; margin-bottom: 20px; color: var(--bronze);">Minha Casa Minha Vida</h2>
-    <p style="max-width: 800px; margin: 0 auto; line-height: 1.8; opacity: 0.9;">A Legacy traduz a burocracia do governo em agilidade para você. Use os subsídios e taxas reduzidas com a segurança de uma consultoria de elite.</p>
+    <img src="mcmv.jpg" class="mcmv-logo" alt="Logo MCMV">
+    <h2 style="font-family: 'Playfair Display'; font-size: 2.5rem; color: var(--bronze); margin-bottom: 20px;">Minha Casa Minha Vida</h2>
+    <p style="max-width: 850px; margin: 0 auto; line-height: 1.8; color: #ccc;">Aprovação ágil e as melhores taxas. Tatiane traduz a burocracia bancária para você realizar seu sonho com a segurança de uma consultoria de elite.</p>
 </section>
 
-<section class="section" style="background: #000;">
+<section class="section">
     <div class="perfil-container">
         <img src="tati.jpg" class="perfil-img" alt="Tatiane">
         <div class="perfil-info">
             <h2>Tatiane</h2>
-            <p style="color: #fce0d3; font-weight: bold; letter-spacing: 2px; margin-bottom: 20px;">DIRETORA, ADVOGADA & CCA OFICIAL</p>
-            <p style="line-height: 1.8;">Ex-gerente premiada como a melhor do Brasil por 5 anos. Com mais de 20 anos de experiência, Tatiane é a autoridade técnica que garante a melhor aprovação para seu financiamento.</p>
+            <p style="color: #fce0d3; font-weight: bold; letter-spacing: 1px; margin-bottom: 20px;">DIRETORA, ADVOGADA & CCA OFICIAL</p>
+            <p style="line-height: 1.8; color: #aaa;">Ex-gerente premiada como a melhor do Brasil por 5 anos. Com mais de 20 anos de experiência bancária, ela é a autoridade técnica que garante a aprovação do seu crédito.</p>
+            <img src="caixa.jpg" class="caixa-logo" alt="Caixa Aqui">
         </div>
     </div>
 </section>
 
 <section class="section">
-    <h2 style="text-align: center; font-family: 'Playfair Display'; font-size: 2.5rem; margin-bottom: 40px; color: var(--bronze);">Empreendimentos Araraquara</h2>
+    <h2 style="text-align: center; font-family: 'Playfair Display'; font-size: 2.5rem; color: var(--bronze); margin-bottom: 40px;">Empreendimentos Araraquara</h2>
     <div class="grid-obras">
         <div class="card-obra">
-            <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?q=80&w=600" alt="Obra 1">
+            <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?q=80&w=800" alt="Residencial Legacy">
             <h3>Residencial Legacy I</h3>
         </div>
         <div class="card-obra">
-            <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?q=80&w=600" alt="Obra 2">
+            <img src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?q=80&w=800" alt="Vilage Araraquara">
             <h3>Vilage Araraquara</h3>
         </div>
     </div>
 </section>
 
 <footer>
-    <p>Av. Portugal, 597 - Sala 7, Centro | Araraquara - SP</p>
+    <p>Avenida Portugal, 597 - Sala 7, Centro | Araraquara - SP</p>
     <p style="margin-top: 10px; color: var(--bronze); font-weight: bold;">Legacy Consultoria Imobiliária © 2026</p>
 </footer>
 
-<a href="https://wa.me/5516997846928" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
+<a href="https://wa.me/5516997846928" class="whatsapp" target="_blank"><i class="fab fa-whatsapp"></i></a>
 
 </body>
 </html>
