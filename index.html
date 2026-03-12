@@ -3,104 +3,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Legacy | Financiamento Caixa Rose Gold e Imóveis Araraquara</title>
-    <meta name="description" content="Saia do aluguel com a Legacy. Especialista em Financiamento Minha Casa Minha Vida Rose Gold em Araraquara. Fale com Tatiane, sua CCA Oficial de Elite.">
-    <meta name="keywords" content="imobiliária araraquara, comprar casa araraquara, alugar casa araraquara, financiamento caixa, minha casa minha vida, sair do aluguel, legacy consultoria imobiliária, correspondente caixa aqui">
-
+    <title>Legacy | Consultoria Imobiliária Rose Gold</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
         :root {
-            /* PALETA PRETO E ROSE GOLD DE ELITE */
-            --bg-deep-black: #080808; /* Preto absoluto para profundidade */
-            --bg-card-black: #121212; /* Preto ligeiramente mais claro para cards */
-            --rose-gold-gradient: linear-gradient(135deg, #e5b299 0%, #b38b78 100%); /* Degradê metalizado */
-            --rose-gold-text: #e5b299; /* Cor fixa para texto menor */
-            --light-gold: #f4d0bc; /* Ouro claro para contraste suave */
-            --text-on-black: #f9f9f9; /* Branco suave para leitura */
+            --rose-gold: linear-gradient(135deg, #e5b299 0%, #b38b78 100%);
+            --bronze-text: #e5b299;
+            --deep-black: #0a0a0a;
+            --card-black: #161616;
             --white: #ffffff;
-            --success: #25d366;
-            --font-main: 'Montserrat', sans-serif;
         }
 
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: var(--font-main); }
-        body { background-color: var(--bg-deep-black); color: var(--text-on-black); line-height: 1.6; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { background-color: var(--deep-black); color: #e0e0e0; font-family: 'Montserrat', sans-serif; }
 
-        /* CABEÇALHO LIMPO E ARREDONDADO */
+        /* CABEÇALHO LIMPO */
         header { 
-            background: var(--bg-card-black); 
-            padding: 15px 5%; 
+            background: #000; 
+            padding: 10px 5%; 
             display: flex; 
             justify-content: space-between; 
             align-items: center; 
-            position: sticky; 
-            top: 0; 
-            z-index: 1000; 
-            box-shadow: 0 4px 15px rgba(229, 178, 153, 0.1); 
-            border-bottom: 2px solid #b38b78; /* Linha sutil bronze */
+            border-bottom: 2px solid #b38b78;
+            position: sticky; top: 0; z-index: 1000;
         }
-        
-        .logo-container { display: flex; align-items: center; }
-        /* LOGO ARREDONDADO DA PARCEIRA ROBERTA */
-        .logo-container img { 
-            height: 70px; 
-            width: auto; 
-            border-radius: 12px; /* Bordas arredondadas no logo */
-            box-shadow: 0 2px 8px rgba(229, 178, 153, 0.2);
-        }
+        .logo-header { height: 70px; border-radius: 15px; } /* Logo arredondado */
 
+        /* HERO PRETO & ROSE GOLD */
         .hero { 
-            background: linear-gradient(rgba(8,8,8,0.85), rgba(8,8,8,0.85)), 
-                        url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=1350&q=80'); 
-            height: 70vh; 
-            background-size: cover; 
-            background-position: center; 
-            display: flex; 
-            align-items: center; 
-            justify-content: center; 
-            color: var(--white); 
-            text-align: center; 
-            padding: 0 20px; 
-            border-bottom: 3px solid #b38b78; /* Linha bronze grossa no final do hero */
+            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?q=80&w=1500&auto=format&fit=crop');
+            height: 60vh; background-size: cover; background-position: center;
+            display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;
         }
-        
         .hero h1 { 
-            font-size: 3.5rem; 
-            margin-bottom: 20px; 
-            text-transform: uppercase; 
-            letter-spacing: 4px; 
-            font-weight: 700;
-            background: var(--rose-gold-gradient); /* Texto degradê Rose Gold */
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-        
-        .hero p { font-size: 1.4rem; margin-bottom: 30px; font-weight: 300; color: var(--light-gold); }
-
-        .btn-whats { 
-            background: var(--success); 
-            color: var(--white); 
-            padding: 18px 35px; 
-            text-decoration: none; 
-            border-radius: 50px; 
-            font-weight: bold; 
-            display: inline-block; 
-            transition: 0.3s; 
-            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
-            font-size: 1.1rem;
-        }
-        
-        /* BOTÃO WHATSAPP NO CABEÇALHO NOVO */
-        .btn-header { 
-            background: var(--rose-gold-gradient); 
-            color: var(--white); 
-            padding: 10px 20px; 
-            border-radius: 20px; 
-            font-size: 0.9rem;
-            text-decoration: none;
-            font-weight: bold;
-            box-shadow: 0 2px 8px rgba(229, 178, 153, 0.2);
+            font-family: 'Playfair Display', serif; font-size: 3.5rem; 
+            background: var(--rose-gold); -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
         }
 
-        .section { padding: 80px 10%; }
+        /* SEÇÃO SOBRE A TATIANE (ESPECÍFICA) */
+        .perfil-section { padding: 60px 10%; display: flex; gap: 40px; align-items: center; background: var(--card-black); }
+        .perfil-img { width: 300px; height: 300px; border-radius: 20px; border: 3px solid #b38b78; object-fit: cover; }
+        .perfil-info h2 { font-family: 'Playfair Display', serif; color: var(--bronze-text); font-size: 2.5rem; }
+
+        /* MCMV ARREDONDADO */
+        .mcmv-section { padding: 60px 10%; text-align: center; }
+        .mcmv-logo { width: 200px; border-radius: 20px; margin-bottom: 20px; border: 1px solid #b38b78; }
+
+        /* MAPA EM TIRA */
+        .map-strip { display: flex; height: 200px; background: #000; border-top: 2px solid #b38b78; border-bottom: 2px solid #b38b78; }
+        .map-frame { flex: 2; border: none; }
+        .map-info { flex: 1; display: flex; flex-direction: column; justify-content: center; align-items: center; background: #111; color: var(--bronze-text); }
+        .stars { color: #f4c150; margin-bottom: 5px; }
+
+        .btn-premium { background: var(--rose-gold); color: white; padding: 15px 35px; border-radius: 50px; text-decoration: none; font-weight: bold; }
+        footer { padding: 40px; text-align: center; background: #000; color: #666; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="logo-legacy.png" class="logo-header" alt="Legacy Logo">
+    <a href="https://wa.me/5516997846928" class="btn-premium" style="padding: 10px 20px; font-size: 0.8rem;">Simular Agora</a>
+</header>
+
+<section class="hero">
+    <h1>Conquiste seu Legado</h1>
+    <p style="color: #b38b78; font-size: 1.2rem;">Expertise Bancária e Imobiliária em Araraquara</p>
+</section>
+
+<section class="mcmv-section">
+    <img src="logo-mcmv.png" class="mcmv-logo" alt="MCMV">
+    <h2 style="font-family: 'Playfair Display'; margin-bottom: 15px;">Minha Casa Minha Vida</h2>
+    <p style="max-width: 800px; margin: 0 auto; opacity: 0.8;">Aproveite os subsídios do governo com a segurança de uma CCA Oficial. Traduzimos a burocracia bancária para você realizar seu sonho sem sustos.</p>
+</section>
+
+<section class="perfil-section">
+    <img src="tatiane.jpg" class="perfil-img" alt="Tatiane">
+    <div class="perfil-info">
+        <h2>Tatiane</h2>
+        <p style="color: #b38b78; font-weight: bold; margin-bottom: 15px;">Diretora, Advogada & CCA Oficial Caixa</p>
+        <p>Ex-gerente premiada como a melhor do Brasil por 5 anos. Com mais de 20 anos de experiência, Tatiane é a autoridade técnica que garante a melhor aprovação para seu financiamento.</p>
+    </div>
+</section>
+
+<div class="map-strip">
+    <iframe class="map-frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3701.234!2d-48.178!3d-21.794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjHCsDQ3JzM4LjQiUyA0OMKwMTAnNDAuOCJX!5e0!3m2!1spt-BR!2sbr!4v1647000000000"></iframe>
+    <div class="map-info">
+        <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+        <p><strong>Avaliação 5.0</strong></p>
+        <p style="font-size: 0.7rem;">Av. Portugal, 597 - Centro</p>
+    </div>
+</div>
+
+<footer>
+    <p>Legacy Consultoria Imobiliária - Araraquara/SP</p>
+    <p>CCA Oficial Caixa Econômica Federal</p>
+</footer>
+
+<a href="https://wa.me/5516997846928" style="position: fixed; bottom: 20px; right: 20px; background: #25d366; color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 30px; text-decoration: none; box-shadow: 0 4px 10px rgba(0,0,0,0.3);"><i class="fab fa-whatsapp"></i></a>
+
+</body>
+</html>
